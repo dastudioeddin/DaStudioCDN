@@ -1,0 +1,242 @@
+/* case study */
+hr {
+    flex: 1 0 61%;
+    margin: 5vh 4vw 0 4vw;
+    color: #dedede;
+}
+
+.web-development {
+   background-color: #fff;
+   position: relative;
+   z-index: 3;
+   padding: 6rem 0rem;
+   display: flex;
+   display: flex;
+   margin-bottom: -2px;
+}
+
+.web-development .padding {
+    flex: 1;
+}
+
+.web-development .about-service{
+    flex: 10;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.web-development .about-service .title {
+    flex: 1 0 40%;
+    min-width: 31vmax;
+    margin-top: 2rem;
+    padding-right: 1vw;
+}
+
+.web-development .about-service .title img{
+    display: block;
+    width: 80%;
+    position: relative;
+}
+
+.web-development .about-service .description {
+    flex: 1 0 50%;
+    min-width: 31vmax;
+}
+
+.web-development .about-service .description div{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.web-development .about-service .description h1{
+    font-family: 'Metropolis-Bold';
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+.web-development .about-service .description span{
+    font-family: 'Metropolis-bold';
+    font-size: 1.5rem;
+}
+
+.web-development .about-service .description p{
+    font-family: 'Metropolis-Light';
+    line-height: 1.7rem;
+    line-height: 2rem;
+    margin: 0px;
+    margin-top: 2rem;
+}
+
+.cms{
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    color: #fff;
+    position: relative;
+    padding: 3rem;
+}
+
+.cms svg.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.cms svg.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cms .team{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cms .team p{
+    flex: 4;
+    font-family: 'Metropolis-Light';
+    font-size: 1.3rem;
+    line-height: 2rem;
+    position: relative;
+    z-index: 4;
+}
+
+.cms .team img{
+    flex: 1;
+    width: 30rem;
+    max-width: 80vw;
+    position: relative;
+    z-index: 4;
+}
+
+.for-you{
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Metropolis-Light';
+    overflow: hidden;
+}
+.for-you img{
+    width: 40rem;
+    max-width: 80vw;
+    margin: 5rem auto;
+    position: relative;
+    z-index: 3;
+    display: block;
+}
+.for-you h2{
+    font-family:'Metropolis-bold';
+    font-size: 3rem;
+    position: relative;
+    z-index: 3;
+}
+
+.for-you p{
+    margin: 2rem auto;
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    position: relative;
+    z-index: 3;
+    padding: auto 5rem;
+}
+
+.not-finished-yet{
+    display: flex;
+    background: linear-gradient(29deg,#2B47F0 24% ,#DD4FE9 75% );
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+
+.not-finished-yet .white{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8rem;
+    background-color: #fff;
+}
+
+.not-finished-yet img{
+    width: 30rem;
+    max-width: 80vw;
+    flex: 1;
+    position: relative;
+    z-index: 4;
+}
+
+.not-finished-yet .content{
+    margin-top: 10rem;
+    background-color: transparent;
+}
+
+.not-finished-yet p{
+    flex: 1;
+    position: relative;
+    z-index: 4;
+    font-family: 'Metropolis-Light';
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.not-finished-yet p span{
+    font-family: 'Metropolis-bold';
+    font-size: 1.5rem;
+}
+
+
+/* 990px and below */
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 895px) {
+    .cms .wrapper .inner-border-fixer img{
+        margin: auto;
+        display: block;
+    }
+    
+    .cms .wrapper .inner-border-fixer h5{
+        text-align: center;
+    }
+    
+    .cms .wrapper .inner-border-fixer p{
+        text-align: center;
+    }
+
+    .cms .wrapper .inner-border-fixer .anchor-wrapper{
+        display:table;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .not-finished-yet{
+        flex-direction: column;
+    }
+
+    .not-finished-yet .content{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .cms .wrapper .inner-border-fixer .wordpress,
+    .cms .wrapper .inner-border-fixer .shopify{
+        padding: 0;
+    }
+    .web-development .about-service .title h1{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
+    .web-development .about-service .description p{
+        line-height: 1rem; 
+        white-space: normal;
+    }
+}
