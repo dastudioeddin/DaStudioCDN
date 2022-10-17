@@ -210,9 +210,10 @@ section{
     padding: 0.9em 0.9em 0.9em 0em;}
 
 .viewport-one .navigation-section .nav .get-quote .head{
-    left: 0em;
+    left: 0.5rem;
     position: absolute;
-    height: 3.5em;
+    height: 2em;
+    width: auto;
     top: 50%;
     transform: translate(0,-50%);
 }
