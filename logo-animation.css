@@ -114,7 +114,8 @@ body { background-color: #161617; }
 
 .layer{  
     position: relative;
-    transition: opacity 1s
+    transition: opacity 1s;
+    margin: auto;
 }
 
 .layer img{  
@@ -143,7 +144,7 @@ body { background-color: #161617; }
 }
 
 .layer.studio{
-    margin-left: -2%;
+    /* margin-left: -2%; */
 }
 
 .logo .layer-1{   
