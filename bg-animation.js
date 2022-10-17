@@ -1138,6 +1138,7 @@ window.switchToColor = function(){
 window.enableScrollOntouchMode = function(enable){
     scrollOntouchMode = enable;
 }
+window.init = init;
 
 var black=false;
 function generateColor() {
@@ -1235,14 +1236,18 @@ $(document).ready(function () {
     if (!(('ontouchstart' in window) ||
     (navigator.maxTouchPoints > 0) ||
     (navigator.msMaxTouchPoints > 0))){
-        initFramebuffers();
-        multipleSplats(parseInt(Math.random() * 20) + 5);
-        update();
-        canvas.addEventListener('mousemove', Mousemove);
-        canvas.addEventListener('touchmove', Touchmove, {passive: true});
-        canvas.addEventListener('touchstart', Touchstart, {passive: true});
-        window.addEventListener('mouseover', Mouseover);
-        window.addEventListener('touchend', Touchend);
-        window.addEventListener('keydown', Keydown);
+        //init();
     }
 });
+
+function init(){
+    initFramebuffers();
+    multipleSplats(parseInt(Math.random() * 20) + 5);
+    update();
+    canvas.addEventListener('mousemove', Mousemove);
+    canvas.addEventListener('touchmove', Touchmove, {passive: true});
+    canvas.addEventListener('touchstart', Touchstart, {passive: true});
+    window.addEventListener('mouseover', Mouseover);
+    window.addEventListener('touchend', Touchend);
+    window.addEventListener('keydown', Keydown);
+}
