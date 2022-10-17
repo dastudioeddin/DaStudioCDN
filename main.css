@@ -89,7 +89,8 @@
 }
 
 .side-line a img{
-    width: 4em;
+    width: auto;
+    height: 4em;
 }
 
 
